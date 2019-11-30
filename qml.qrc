@@ -2,5 +2,18 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>qtquickcontrols2.conf</file>
+        <file>qml/BasicAuth.qml</file>
+        <file>qml/BasicAuthForm.ui.qml</file>
+        <file>qml/auth/Login.qml</file>
+        <file>qml/auth/LoginForm.ui.qml</file>
+        <file alias="img1">assets/images/sld1.jpg</file>
+        <file alias="img2">assets/images/sld2.jpg</file>
+        <file alias="img3">assets/images/sld3.jpg</file>
+        <file alias="img4">assets/images/sld4.jpg</file>
+        <file alias="Vazir">assets/Fonts/Vazir.ttf</file>
+        <file>qml/auth/Reset.qml</file>
+        <file>qml/auth/ResetForm.ui.qml</file>
+        <file>qml/auth/Register.qml</file>
+        <file>qml/auth/RegisterForm.ui.qml</file>
     </qresource>
 </RCC>

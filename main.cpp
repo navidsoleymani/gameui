@@ -7,7 +7,7 @@
 void init_jni()
 {
 #ifdef GU_ANDROID_BUILD
-    change_screen_landscape();
+    //change_screen_landscape();
 #endif
 }
 
