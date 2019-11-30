@@ -30,8 +30,8 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 android: {
     QT += androidextras
-    HEADERS += csrc/androidhelpers.hpp
-    SOURCES += csrc/androidhelpers.cpp
+    HEADERS += src/androidhelpers.hpp
+    SOURCES += src/androidhelpers.cpp
     DEFINES += GU_ANDROID_BUILD
 }
 
