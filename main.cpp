@@ -1,7 +1,11 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
+#include <QQmlContext>
+#include "src/auth/login.hpp"
+#include "src/auth/register.hpp"
+#include "src/auth/reset.hpp"
 #ifdef GU_ANDROID_BUILD
-#include "csrc/androidhelpers.hpp"
+#include "src/androidhelpers.hpp"
 #endif
 
 void init_jni()
@@ -17,7 +21,15 @@ int main(int argc, char* argv[])
 
     QGuiApplication app(argc, argv);
     //init_jni();
+    // create Custome C++ classes
+    Login loginObj;
+    Register registerObj;
+    Reset resetObj;
     QQmlApplicationEngine engine;
+    auto root = engine.rootContext();
+    root->setContextProperty("LoginManager", &loginObj);
+    root->setContextProperty("RegisterManager", &registerObj);
+    root->setContextProperty("ResetManager", &resetObj);
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
     if (engine.rootObjects().isEmpty())
         return -1;
