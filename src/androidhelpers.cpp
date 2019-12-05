@@ -1,4 +1,4 @@
-#include "csrc/androidhelpers.hpp"
+#include "src/androidhelpers.hpp"
 
 void change_screen_landscape()
 {

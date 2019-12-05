@@ -46,15 +46,7 @@ DISTFILES += \
     android/build.gradle \
     android/gradle/wrapper/gradle-wrapper.properties \
     android/gradlew.bat \
-    android/src/ir/mortza/gameui/demo/GeneralBridge.java \
-    qml/BasicAuthForm.ui.qml \
-    qml/BasicAuth.qml \
-    qml/auth/LoginForm.ui.qml \
-    qml/auth/Login.qml \
-    qml/auth/ResetForm.ui.qml \
-    qml/auth/Reset.qml \
-    qml/auth/RegisterForm.ui.qml \
-    qml/auth/Register.qml
+    android/src/ir/mortza/gameui/demo/GeneralBridge.java
 
 contains(ANDROID_TARGET_ARCH,armeabi-v7a) {
     ANDROID_PACKAGE_SOURCE_DIR = \

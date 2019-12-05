@@ -15,5 +15,26 @@
         <file>qml/auth/ResetForm.ui.qml</file>
         <file>qml/auth/Register.qml</file>
         <file>qml/auth/RegisterForm.ui.qml</file>
+        <file>qml/index/Index.qml</file>
+        <file>qml/index/IndexForm.ui.qml</file>
+        <file alias="poker-bg">assets/images/poker-img.jpg</file>
+        <file alias="backgammon-bg">assets/images/backgammon-img.jpg</file>
+        <file alias="IcoMoon">assets/Fonts/icomoon-v1.0/fonts/icomoon.ttf</file>
+        <file>qml/index/helpers/IndexDrawer.qml</file>
+        <file>qml/index/helpers/IndexDrawerForm.ui.qml</file>
+        <file alias="drawer-bg/1">assets/images/bg-1.jpg</file>
+        <file alias="drawer-bg/2">assets/images/bg-2.jpg</file>
+        <file alias="drawer-bg/3">assets/images/bg-3.jpg</file>
+        <file alias="drawer-bg/4">assets/images/bg-4.jpg</file>
+        <file alias="drawer-bg/5">assets/images/bg-5.jpg</file>
+        <file alias="drawer-img/1">assets/images/1.png</file>
+        <file alias="drawer-img/2">assets/images/2.png</file>
+        <file alias="drawer-img/3">assets/images/3.png</file>
+        <file alias="drawer-img/4">assets/images/4.png</file>
+        <file alias="drawer-img/5">assets/images/5.png</file>
+        <file alias="drawer-img/6">assets/images/6.png</file>
+        <file alias="drawer-img/7">assets/images/7.png</file>
+        <file alias="drawer-img/8">assets/images/8.png</file>
+        <file alias="drawer-img/9">assets/images/9.png</file>
     </qresource>
 </RCC>

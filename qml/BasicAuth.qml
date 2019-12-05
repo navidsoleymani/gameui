@@ -3,20 +3,8 @@ import QtQuick 2.4
 BasicAuthForm {
     signal doLogin
     signal doForgot
+    signal loginOk
     property int curSlider: 0
-
-
-    /*loginBtn.onClicked: {
-        revert_state.running = true
-        state = "Loading_State"
-    }*/
-    Timer {
-        id: revert_state
-        interval: 2000
-        running: false
-        repeat: false
-        onTriggered: state = "base state"
-    }
 
     anchors.leftMargin: 5
     anchors.rightMargin: 5
@@ -57,6 +45,7 @@ BasicAuthForm {
         target: loginForm
         onRegister: authFormsContainer.setCurrentIndex(1)
         onResetPassword: authFormsContainer.setCurrentIndex(2)
+        onLoginOk: loginOk()
     }
     Connections {
         target: registerForm

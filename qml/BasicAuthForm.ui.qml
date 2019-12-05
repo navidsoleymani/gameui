@@ -16,7 +16,7 @@ Item {
     Rectangle {
         width: parent.width / 2
         height: parent.height
-        color: "#00000000"
+        color: "white"
         anchors.top: parent.top
         anchors.topMargin: 0
         anchors.bottom: parent.bottom
@@ -51,7 +51,7 @@ Item {
         id: loginLayout
         width: parent.width / 2
         height: parent.height
-        color: "#00000000"
+        color: "white"
         anchors.top: parent.top
         anchors.topMargin: 0
         anchors.bottom: parent.bottom
@@ -76,10 +76,6 @@ Item {
         }
     }
 }
-
-
-
-
 
 
 
