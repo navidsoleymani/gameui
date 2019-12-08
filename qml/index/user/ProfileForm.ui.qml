@@ -7,6 +7,7 @@ Item {
     height: 400
     property alias mainStackView: mainStackView
     property alias mainContainer: mainContainer
+    property alias backBtn: backBtn
     Page {
         id: mainContainer
         LayoutMirroring.enabled: true
@@ -20,6 +21,16 @@ Item {
             }
             TabButton {
                 text: "اطلاعات حساب"
+            }
+        }
+        header: ToolBar {
+            ToolButton {
+                id: backBtn
+                text: "\uea42"
+                anchors.right: parent.right
+                anchors.rightMargin: 10
+                font.family: "IcoMoon"
+                font.pointSize: 20
             }
         }
 
@@ -46,6 +57,8 @@ Item {
         }
     }
 }
+
+
 
 
 

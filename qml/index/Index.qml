@@ -20,12 +20,16 @@ IndexForm {
         height: parent.height
         width: parent.width * 0.35
         z: 3
-        dragMargin: 30
+        dragMargin: 15
+        //interactive: false
         Helpers.IndexDrawer {
             id: indexDrawerItem
             anchors.fill: parent
-            onItemClicked: if (itemId === 1)
-                               showProfile()
+            onItemClicked: {
+                drawerItem.close()
+                if (itemId === 1)
+                    showProfile()
+            }
         }
     }
 }

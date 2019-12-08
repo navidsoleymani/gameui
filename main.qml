@@ -24,7 +24,7 @@ ApplicationWindow {
     }
 
     CRoot.BasicAuth {
-        id: bsciAuth
+        id: basicAuth
         onLoginOk: {
             mainStackView.pop()
             mainStackView.push(index)
@@ -32,10 +32,11 @@ ApplicationWindow {
     }
     CIndex.Index {
         id: index
-        onShowProfile: console.log("show profile")
+        onShowProfile: mainStackView.push(userProfile)
     }
     CUser.Profile{
         id:userProfile
+        onBack: mainStackView.pop()
     }
 
     StackView {
@@ -45,6 +46,6 @@ ApplicationWindow {
         }
 
         anchors.fill: parent
-        initialItem: userProfile
+        initialItem: basicAuth
     }
 }
