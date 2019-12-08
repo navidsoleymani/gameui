@@ -22,7 +22,7 @@ Item {
         anchors.bottom: parent.bottom
         anchors.bottomMargin: 0
         anchors.left: parent.left
-        anchors.leftMargin: 0
+        anchors.leftMargin: 5
         SwipeView {
             //anchors.centerIn: parent
             id: imagesSlider
@@ -57,7 +57,7 @@ Item {
         anchors.bottom: parent.bottom
         anchors.bottomMargin: 0
         anchors.right: parent.right
-        anchors.rightMargin: 0
+        anchors.rightMargin: 5
         SwipeView {
             id: authFormsContainer
             width: parent.width
@@ -76,6 +76,12 @@ Item {
         }
     }
 }
+
+
+
+
+
+
 
 
 

@@ -5,10 +5,8 @@ BasicAuthForm {
     signal doForgot
     signal loginOk
     property int curSlider: 0
-
-    anchors.leftMargin: 5
-    anchors.rightMargin: 5
-    anchors.fill: parent
+    width: parent.width
+    height: parent.height
     ListModel {
         id: slides
         ListElement {

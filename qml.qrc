@@ -36,5 +36,13 @@
         <file alias="drawer-img/7">assets/images/7.png</file>
         <file alias="drawer-img/8">assets/images/8.png</file>
         <file alias="drawer-img/9">assets/images/9.png</file>
+        <file alias="history-header/backgammon">assets/images/backgammon-history-header.jpg</file>
+        <file alias="history-header/poker">assets/images/poker-history-header.jpg</file>
+        <file>qml/index/user/Profile.qml</file>
+        <file>qml/index/user/ProfileForm.ui.qml</file>
+        <file>qml/index/user/UserInfo.qml</file>
+        <file>qml/index/user/UserInfoForm.ui.qml</file>
+        <file>qml/index/user/GameHistory.qml</file>
+        <file>qml/index/user/GameHistoryForm.ui.qml</file>
     </qresource>
 </RCC>

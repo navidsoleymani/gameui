@@ -2,6 +2,7 @@ import QtQuick 2.10
 import QtQuick.Controls 2.3
 import "qml" as CRoot
 import "qml/index" as CIndex
+import "qml/index/user" as CUser
 
 ApplicationWindow {
     id: mainWindow
@@ -31,7 +32,12 @@ ApplicationWindow {
     }
     CIndex.Index {
         id: index
+        onShowProfile: console.log("show profile")
     }
+    CUser.Profile{
+        id:userProfile
+    }
+
     StackView {
         id: mainStackView
         background: Rectangle {
@@ -39,6 +45,6 @@ ApplicationWindow {
         }
 
         anchors.fill: parent
-        initialItem: index
+        initialItem: userProfile
     }
 }

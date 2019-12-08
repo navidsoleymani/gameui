@@ -1,5 +1,6 @@
 import QtQuick 2.4
 import QtQuick.Controls 2.12
+import QtGraphicalEffects 1.12
 
 Item {
     width: 400
@@ -11,14 +12,17 @@ Item {
         anchors.topMargin: 10
         spacing: 10
         anchors.fill: parent
-
         Image {
-            id: image
+            id: avatarImg
             width: 100
             height: 100
             anchors.horizontalCenter: parent.horizontalCenter
             source: "qrc:/drawer-img/4"
             fillMode: Image.PreserveAspectCrop
+        }
+        Label {
+            anchors.horizontalCenter: parent.horizontalCenter
+            text: "نام کاربری"
         }
 
         ToolSeparator {
@@ -35,14 +39,6 @@ Item {
             snapMode: ListView.SnapToItem
             clip: true
             anchors.horizontalCenter: parent.horizontalCenter
-            delegate: ItemDelegate {
-                id: itemDelegate
-                width: parent.width
-                text: textBtn
-                rightPadding: 10
-                display: AbstractButton.TextOnly
-                LayoutMirroring.enabled: true
-            }
             ScrollIndicator.vertical: ScrollIndicator {
             }
         }
