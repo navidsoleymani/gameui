@@ -1,4 +1,5 @@
 import QtQuick 2.10
+import QtQuick.Window 2.12
 import QtQuick.Controls 2.3
 import "qml" as CRoot
 import "qml/index" as CIndex
@@ -41,9 +42,6 @@ ApplicationWindow {
 
     StackView {
         id: mainStackView
-        background: Rectangle {
-            color: "white"
-        }
 
         anchors.fill: parent
         initialItem: basicAuth

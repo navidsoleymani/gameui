@@ -19,6 +19,11 @@ Item {
             width: parent.width
             horizontalAlignment: Text.AlignHCenter
             placeholderText: "نام کاربری"
+            placeholderTextColor: "#a0ffffff"
+            color: "white"
+            background: Image {
+                source: "qrc:/graphics/text-input-bg-black"
+            }
         }
         Column {
             width: parent.width
@@ -29,6 +34,9 @@ Item {
                 text: "بازیابی رمز عبور"
                 highlighted: true
                 Material.accent: Material.Red
+                background: Image {
+                    source: "qrc:/graphics/text-input-bg"
+                }
             }
             Row {
                 anchors.horizontalCenter: parent.horizontalCenter
@@ -38,11 +46,17 @@ Item {
                     id: loginBtn
                     text: "ورود"
                     flat: true
+                    background: Image {
+                        source: "qrc:/graphics/default-btn-bg"
+                    }
                 }
                 Button {
                     id: registerBtn
                     text: "ثبت نام"
                     flat: true
+                    background: Image {
+                        source: "qrc:/graphics/default-btn-bg"
+                    }
                 }
             }
         }

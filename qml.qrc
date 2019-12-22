@@ -69,5 +69,6 @@
         <file alias="graphics/text-input-bg-black">assets/images/UI-edited/text-input-bg-black.png</file>
         <file alias="graphics/text-input-bg">assets/images/UI-edited/text-input-bg.png</file>
         <file alias="graphics/wallet">assets/images/UI-edited/wallet.png</file>
+        <file alias="graphics/auth-bg">assets/images/UI-edited/auth-bg.png</file>
     </qresource>
 </RCC>

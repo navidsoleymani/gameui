@@ -21,6 +21,11 @@ Item {
             width: parent.width
             horizontalAlignment: Text.AlignHCenter
             placeholderText: "نام کاربری"
+            placeholderTextColor: "#a0ffffff"
+            color: "white"
+            background: Image {
+                source: "qrc:/graphics/text-input-bg-black"
+            }
         }
         TextField {
             id: password
@@ -28,6 +33,11 @@ Item {
             echoMode: TextInput.Password
             horizontalAlignment: Text.AlignHCenter
             placeholderText: "رمز عبور"
+            placeholderTextColor: "#a0ffffff"
+            color: "white"
+            background: Image {
+                source: "qrc:/graphics/text-input-bg-black"
+            }
         }
         TextField {
             id: referenceCode
@@ -35,6 +45,11 @@ Item {
             echoMode: TextInput.Password
             horizontalAlignment: Text.AlignHCenter
             placeholderText: "کد معرف"
+            placeholderTextColor: "#a0ffffff"
+            color: "white"
+            background: Image {
+                source: "qrc:/graphics/text-input-bg-black"
+            }
         }
         Column {
             width: parent.width
@@ -45,6 +60,9 @@ Item {
                 text: "ثبت نام"
                 highlighted: true
                 Material.accent: Material.Green
+                background: Image {
+                    source: "qrc:/graphics/text-input-bg"
+                }
             }
             Row {
                 anchors.horizontalCenter: parent.horizontalCenter
@@ -54,11 +72,17 @@ Item {
                     id: forgotBtn
                     text: "فراموشی رمز عبور"
                     flat: true
+                    background: Image {
+                        source: "qrc:/graphics/default-btn-bg"
+                    }
                 }
                 Button {
                     id: loginBtn
                     text: "ورود"
                     flat: true
+                    background: Image {
+                        source: "qrc:/graphics/default-btn-bg"
+                    }
                 }
             }
         }

@@ -13,10 +13,15 @@ Item {
     property alias sliderRepeater: sliderRepeater
     property alias imagesSlider: imagesSlider
 
+    Image{
+        fillMode: Image.Stretch
+        source: "qrc:/graphics/auth-bg"
+        anchors.fill: parent
+    }
     Rectangle {
         width: parent.width / 2
         height: parent.height
-        color: "white"
+        color: "transparent"
         anchors.top: parent.top
         anchors.topMargin: 0
         anchors.bottom: parent.bottom
@@ -26,10 +31,9 @@ Item {
         SwipeView {
             //anchors.centerIn: parent
             id: imagesSlider
-            anchors.top: parent.top
-            anchors.topMargin: 15
-            width: parent.width - 15
-            height: parent.height - 45
+            anchors.centerIn: parent
+            width: parent.width*0.6
+            height: parent.height*0.6
             orientation: ListView.Horizontal
             spacing: 10
             property var model: ListModel {
@@ -51,7 +55,7 @@ Item {
         id: loginLayout
         width: parent.width / 2
         height: parent.height
-        color: "white"
+        color: "transparent"
         anchors.top: parent.top
         anchors.topMargin: 0
         anchors.bottom: parent.bottom
@@ -76,6 +80,20 @@ Item {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
