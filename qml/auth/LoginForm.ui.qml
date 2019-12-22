@@ -19,6 +19,11 @@ Item {
             width: parent.width
             horizontalAlignment: Text.AlignHCenter
             placeholderText: "نام کاربری"
+            placeholderTextColor: "#a0ffffff"
+            color: "white"
+            background: Image {
+                source: "qrc:/graphics/text-input-bg-black"
+            }
         }
         TextField {
             id: password
@@ -26,6 +31,11 @@ Item {
             echoMode: TextInput.Password
             horizontalAlignment: Text.AlignHCenter
             placeholderText: "رمز عبور"
+            placeholderTextColor: "#a0ffffff"
+            color: "white"
+            background: Image {
+                source: "qrc:/graphics/text-input-bg-black"
+            }
         }
         Column {
             width: parent.width
@@ -35,6 +45,9 @@ Item {
                 width: parent.width
                 text: "ورورد"
                 highlighted: true
+                background: Image {
+                    source: "qrc:/graphics/text-input-bg"
+                }
             }
             Row {
                 anchors.horizontalCenter: parent.horizontalCenter
@@ -44,11 +57,17 @@ Item {
                     id: forgotBtn
                     text: "فراموشی رمز عبور"
                     flat: true
+                    background: Image{
+                        source: "qrc:/graphics/default-btn-bg"
+                    }
                 }
                 Button {
                     id: registerBtn
                     text: "ثبت نام"
                     flat: true
+                    background: Image{
+                        source: "qrc:/graphics/default-btn-bg"
+                    }
                 }
             }
         }

@@ -44,5 +44,30 @@
         <file>qml/index/user/UserInfoForm.ui.qml</file>
         <file>qml/index/user/GameHistory.qml</file>
         <file>qml/index/user/GameHistoryForm.ui.qml</file>
+        <file alias="graphics/btn-green">assets/images/UI-edited/btn-green.png</file>
+        <file alias="graphics/cards-batch">assets/images/UI-edited/cards-batch.png</file>
+        <file alias="graphics/checkers-1">assets/images/UI-edited/checkers-1.png</file>
+        <file alias="graphics/checkers-2">assets/images/UI-edited/checkers-2.png</file>
+        <file alias="graphics/checkers-3">assets/images/UI-edited/checkers-3.png</file>
+        <file alias="graphics/checkers-4">assets/images/UI-edited/checkers-4.png</file>
+        <file alias="graphics/checkers-closed">assets/images/UI-edited/checkers-closed.png</file>
+        <file alias="graphics/clock">assets/images/UI-edited/clock.png</file>
+        <file alias="graphics/coins">assets/images/UI-edited/coins.png</file>
+        <file alias="graphics/cup">assets/images/UI-edited/cup.png</file>
+        <file alias="graphics/default-btn-bg">assets/images/UI-edited/default-btn-bg.png</file>
+        <file alias="graphics/default-profile">assets/images/UI-edited/default-profile.png</file>
+        <file alias="graphics/dice-6">assets/images/UI-edited/dice-6.png</file>
+        <file alias="graphics/dollar-sign">assets/images/UI-edited/dollar-sign.png</file>
+        <file alias="graphics/footer-line">assets/images/UI-edited/footer-line.png</file>
+        <file alias="graphics/gears">assets/images/UI-edited/gears.png</file>
+        <file alias="graphics/green-transparent-bar">assets/images/UI-edited/green-transparent-bar.png</file>
+        <file alias="graphics/instagram">assets/images/UI-edited/instagram.png</file>
+        <file alias="graphics/left-arrow">assets/images/UI-edited/left-arrow.png</file>
+        <file alias="graphics/lock-orange">assets/images/UI-edited/lock-orange.png</file>
+        <file alias="graphics/support-icon">assets/images/UI-edited/support-icon.png</file>
+        <file alias="graphics/telegram">assets/images/UI-edited/telegram.png</file>
+        <file alias="graphics/text-input-bg-black">assets/images/UI-edited/text-input-bg-black.png</file>
+        <file alias="graphics/text-input-bg">assets/images/UI-edited/text-input-bg.png</file>
+        <file alias="graphics/wallet">assets/images/UI-edited/wallet.png</file>
     </qresource>
 </RCC>
