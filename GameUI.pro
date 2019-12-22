@@ -56,5 +56,6 @@ contains(ANDROID_TARGET_ARCH,armeabi-v7a) {
 HEADERS += \
     src/auth/login.hpp \
     src/auth/register.hpp \
-    src/auth/reset.hpp
+    src/auth/reset.hpp \
+    src/constants.hpp
 
