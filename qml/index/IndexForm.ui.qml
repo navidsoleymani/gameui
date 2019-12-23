@@ -12,8 +12,8 @@ Item {
     property alias pokerMA: pokerMA
     property alias backgammmonMA: backgammmonMA
     Page {
-        background: Rectangle {
-            color: "#ffffff"
+        background: Image {
+            source: "qrc:/graphics/auth-bg"
         }
 
         id: page
@@ -39,6 +39,7 @@ Item {
             Rectangle {
                 width: parent.width * 0.5
                 height: parent.height
+                color: "transparent"
                 Image {
                     id: pokerImg
                     width: pokerMA.pressed ? parent.width * 0.48 : parent.width * 0.50
@@ -69,6 +70,7 @@ Item {
             Rectangle {
                 width: parent.width * 0.5
                 height: parent.height
+                color: "transparent"
                 Image {
                     id: backgammmonImg
                     width: backgammmonMA.pressed ? parent.width * 0.48 : parent.width * 0.50
@@ -94,7 +96,6 @@ Item {
         }
     }
 }
-
 
 /*##^## Designer {
     D{i:0;height:350;width:800}
