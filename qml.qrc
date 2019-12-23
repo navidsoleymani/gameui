@@ -70,5 +70,23 @@
         <file alias="graphics/text-input-bg">assets/images/UI-edited/text-input-bg.png</file>
         <file alias="graphics/wallet">assets/images/UI-edited/wallet.png</file>
         <file alias="graphics/auth-bg">assets/images/UI-edited/auth-bg.png</file>
+        <file alias="graphics/bar-green-transparent">assets/images/UI-edited/bar-green-transparent.png</file>
+        <file alias="graphics/black-bar-one-side">assets/images/UI-edited/black-bar-one-side.png</file>
+        <file alias="graphics/blue-bar">assets/images/UI-edited/blue-bar.png</file>
+        <file alias="graphics/brown-bar-sharp">assets/images/UI-edited/brown-bar-sharp.png</file>
+        <file alias="graphics/cards-back-cover-1">assets/images/UI-edited/cards-back-cover-1.png</file>
+        <file alias="graphics/cards-back-cover-2">assets/images/UI-edited/cards-back-cover-2.png</file>
+        <file alias="graphics/clover-transparent">assets/images/UI-edited/clover-transparent.png</file>
+        <file alias="graphics/diamond-transparent">assets/images/UI-edited/diamond-transparent.png</file>
+        <file alias="graphics/game-table-brown">assets/images/UI-edited/game-table-brown.png</file>
+        <file alias="graphics/gold-bar-transparent">assets/images/UI-edited/gold-bar-transparent.png</file>
+        <file alias="graphics/green-bar-transparent">assets/images/UI-edited/green-bar-transparent.png</file>
+        <file alias="graphics/grey-transparent-bar">assets/images/UI-edited/grey-transparent-bar.png</file>
+        <file alias="graphics/heart-transparent">assets/images/UI-edited/heart-transparent.png</file>
+        <file alias="graphics/pershia-logo-solid">assets/images/UI-edited/pershia-logo-solid.png</file>
+        <file alias="graphics/pershia-logo-lion-solid">assets/images/UI-edited/pershia-logo-lion-solid.png</file>
+        <file alias="graphics/pershia-logo-transparent">assets/images/UI-edited/pershia-logo-transparent.png</file>
+        <file alias="graphics/solid-green">assets/images/UI-edited/solid-green.png</file>
+        <file alias="graphics/spade-transparent">assets/images/UI-edited/spade-transparent.png</file>
     </qresource>
 </RCC>
