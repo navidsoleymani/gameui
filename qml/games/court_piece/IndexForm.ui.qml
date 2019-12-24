@@ -41,6 +41,10 @@ Item {
                     width: parent.width / 3
                     height: parent.height
                     color: "transparent"
+                    PlayerInfo {
+                        width: parent.width
+                        height: parent.height
+                    }
                 }
                 Rectangle {
                     width: parent.width / 3
@@ -55,14 +59,15 @@ Item {
                     width: parent.width / 3
                     height: parent.height
                     color: "transparent"
+                    PlayerInfo {
+                        width: parent.width
+                        height: parent.height
+                    }
                 }
             }
         }
     }
 }
-
-
-
 
 
 
