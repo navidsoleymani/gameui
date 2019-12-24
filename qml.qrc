@@ -55,6 +55,7 @@
         <file alias="graphics/coins">assets/images/UI-edited/coins.png</file>
         <file alias="graphics/cup">assets/images/UI-edited/cup.png</file>
         <file alias="graphics/default-btn-bg">assets/images/UI-edited/default-btn-bg.png</file>
+        <file alias="graphics/default-btn-bg-sharp">assets/images/UI-edited/default-btn-bg-sharp.png</file>
         <file alias="graphics/default-profile">assets/images/UI-edited/default-profile.png</file>
         <file alias="graphics/dice-6">assets/images/UI-edited/dice-6.png</file>
         <file alias="graphics/dollar-sign">assets/images/UI-edited/dollar-sign.png</file>
@@ -88,5 +89,12 @@
         <file alias="graphics/pershia-logo-transparent">assets/images/UI-edited/pershia-logo-transparent.png</file>
         <file alias="graphics/solid-green">assets/images/UI-edited/solid-green.png</file>
         <file alias="graphics/spade-transparent">assets/images/UI-edited/spade-transparent.png</file>
+        <file alias="graphics/backgammon-bg-1">assets/images/UI-edited/backgammon-bg-1.png</file>
+        <file>qml/games/backgammon/Index.qml</file>
+        <file>qml/games/backgammon/IndexForm.ui.qml</file>
+        <file>qml/games/court_piece/Index.qml</file>
+        <file>qml/games/court_piece/IndexForm.ui.qml</file>
+        <file>qml/games/court_piece/GameDetails.qml</file>
+        <file>qml/games/court_piece/GameDetailsForm.ui.qml</file>
     </qresource>
 </RCC>

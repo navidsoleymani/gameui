@@ -4,7 +4,8 @@ import QtQuick.Controls 2.3
 import "qml" as CRoot
 import "qml/index" as CIndex
 import "qml/index/user" as CUser
-
+import "qml/games/backgammon" as BackgammonUI
+import "qml/games/court_piece" as CourtPiece
 ApplicationWindow {
     id: mainWindow
     visible: true
@@ -24,7 +25,7 @@ ApplicationWindow {
         source: "qrc:///IcoMoon"
     }
 
-    CRoot.BasicAuth {
+    /*CRoot.BasicAuth {
         id: basicAuth
         onLoginOk: {
             mainStackView.pop()
@@ -38,12 +39,14 @@ ApplicationWindow {
     CUser.Profile{
         id:userProfile
         onBack: mainStackView.pop()
-    }
+    }*/
 
     StackView {
         id: mainStackView
 
         anchors.fill: parent
-        initialItem: basicAuth
+        initialItem: CourtPiece.Index{
+
+        }
     }
 }
