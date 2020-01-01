@@ -102,5 +102,7 @@
         <file>qml/games/court_piece/GameDetailsForm.ui.qml</file>
         <file>qml/games/court_piece/PlayerInfo.qml</file>
         <file>qml/games/court_piece/PlayerInfoForm.ui.qml</file>
+        <file>qml/games/court_piece/GamePage.qml</file>
+        <file>qml/games/court_piece/GamePageForm.ui.qml</file>
     </qresource>
 </RCC>

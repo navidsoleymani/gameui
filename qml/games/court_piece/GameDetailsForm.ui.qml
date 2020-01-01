@@ -4,6 +4,9 @@ import QtQuick.Controls 2.12
 Item {
     width: 400
     height: 400
+    property alias cancelGameBtn: cancelGameBtn
+    property alias timeText: timeText
+    property alias handsText: handsText
     property alias betText: betText
     Column {
         anchors.fill: parent
@@ -21,7 +24,7 @@ Item {
                 id: betText
                 text: qsTr("10K")
                 color: "white"
-                font.pixelSize: parent.height * 0.5
+                font.pixelSize: parent.height * 0.3
                 anchors.centerIn: parent
             }
         }
@@ -39,7 +42,7 @@ Item {
                 id: timeText
                 text: qsTr("نرمال")
                 color: "white"
-                font.pixelSize: parent.height * 0.5
+                font.pixelSize: parent.height * 0.3
                 anchors.centerIn: parent
             }
         }
@@ -58,7 +61,7 @@ Item {
                 id: handsText
                 text: qsTr("10")
                 color: "white"
-                font.pixelSize: parent.height * 0.5
+                font.pixelSize: parent.height * 0.3
                 anchors.centerIn: parent
             }
         }
@@ -68,7 +71,12 @@ Item {
             Text {
                 anchors.centerIn: parent
                 text: qsTr("لغو")
-                font.pixelSize: parent.height * 0.5
+                font.pixelSize: parent.height * 0.3
+            }
+            MouseArea {
+                id: cancelGameBtn
+                anchors.fill: parent
+                z: 2
             }
         }
     }

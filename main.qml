@@ -25,7 +25,7 @@ ApplicationWindow {
         source: "qrc:///IcoMoon"
     }
 
-    /*CRoot.BasicAuth {
+    CRoot.BasicAuth {
         id: basicAuth
         onLoginOk: {
             mainStackView.pop()
@@ -39,14 +39,13 @@ ApplicationWindow {
     CUser.Profile{
         id:userProfile
         onBack: mainStackView.pop()
-    }*/
+    }
 
     StackView {
         id: mainStackView
 
         anchors.fill: parent
-        initialItem: CourtPiece.Index{
-
-        }
+        initialItem: basicAuth
+        Component.onCompleted: push(index)
     }
 }

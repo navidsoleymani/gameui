@@ -9,11 +9,13 @@ IndexForm {
     height: parent.height
     pokerMA.onPressed: console.log("pressed")
     pokerMA.onReleased: console.log("released")
+    sidebarOpener.enabled: false
+    sidebarOpener.visible: false
+    // work around for drag margin issue
+    /*sidebarOpener.z: drawerItem.opened ? 2 : 4
     sidebarOpener.onClicked: {
         drawerItem.open()
     }
-    // work around for drag margin issue
-    sidebarOpener.z: drawerItem.opened ? 2 : 4
     Drawer {
         id: drawerItem
         edge: Qt.RightEdge
@@ -31,5 +33,5 @@ IndexForm {
                     showProfile()
             }
         }
-    }
+    }*/
 }
