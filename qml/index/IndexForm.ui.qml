@@ -22,11 +22,11 @@ Item {
             Row {
                 width: parent.width
                 height: parent.height * 0.15
+                anchors.horizontalCenter: parent.horizontalCenter
             }
             Row {
                 width: parent.width * 0.90
-
-                height: parent.height * 0.75
+                height: parent.height * 0.60
                 anchors.horizontalCenter: parent.horizontalCenter
                 layoutDirection: Qt.RightToLeft
                 Rectangle {
@@ -35,7 +35,7 @@ Item {
                     color: "transparent"
                     Image {
                         id: backgammmonImg
-                        height: parent.height * 0.8
+                        height: parent.height
                         fillMode: Image.PreserveAspectFit
                         anchors.centerIn: parent
                         source: "qrc:/graphics/checkers-closed"
@@ -74,7 +74,7 @@ Item {
                     color: "transparent"
                     Image {
                         id: pokerImg
-                        height: parent.height * 0.8
+                        height: parent.height
                         fillMode: Image.PreserveAspectFit
                         anchors.centerIn: parent
                         source: "qrc:/graphics/cards-batch"
@@ -85,13 +85,99 @@ Item {
                     }
                 }
             }
-            Row {
+            Column {
                 width: parent.width
-                height: parent.height * 0.10
+                height: parent.height * 0.25
+                anchors.horizontalCenter: parent.horizontalCenter
+                Image {
+                    height: parent.height * 0.5
+                    width: parent.width
+                    source: "qrc:/graphics/footer-line"
+                }
+                Row {
+                    width: parent.width * 0.9
+                    height: parent.height * 0.5
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    spacing: 10
+                    Image {
+                        width: parent.width * 0.15
+                        height: parent.height * 0.9
+                        source: "qrc:/graphics/text-input-bg-black"
+                        Text {
+                            anchors.centerIn: parent
+                            font.pixelSize: parent.height * 0.30
+                            color: "yellow"
+                            text: qsTr("تنظیمات")
+                        }
+                    }
+                    Image {
+                        width: parent.width * 0.15
+                        height: parent.height * 0.9
+                        source: "qrc:/graphics/text-input-bg-black"
+                        Text {
+                            anchors.centerIn: parent
+                            font.pixelSize: parent.height * 0.30
+                            color: "yellow"
+                            text: qsTr("تراکنش ها")
+                        }
+                    }
+
+                    Rectangle {
+                        width: parent.width * 0.30
+                        height: parent.height * 0.9
+                        color: "transparent"
+                        Row {
+                            height: parent.height
+                            anchors.horizontalCenter: parent.horizontalCenter
+                            Image {
+                                id: image
+                                height: parent.height * 0.9
+                                width: 50
+                                fillMode: Image.PreserveAspectFit
+                                source: "qrc:/graphics/telegram"
+                            }
+                            Image {
+                                height: parent.height * 0.9
+                                width: 50
+                                fillMode: Image.PreserveAspectFit
+                                source: "qrc:/graphics/instagram"
+                            }
+                        }
+                    }
+                    Image {
+                        width: parent.width * 0.15
+                        height: parent.height * 0.9
+                        source: "qrc:/graphics/text-input-bg-black"
+                        Text {
+                            anchors.centerIn: parent
+                            font.pixelSize: parent.height * 0.30
+                            color: "yellow"
+                            text: qsTr("در حال بازی")
+                        }
+                    }
+
+                    Image {
+                        width: parent.width * 0.15
+                        height: parent.height * 0.9
+                        source: "qrc:/graphics/text-input-bg-black"
+                        Text {
+                            anchors.centerIn: parent
+                            font.pixelSize: parent.height * 0.30
+                            color: "yellow"
+                            text: qsTr("پشتیبانی")
+                        }
+                    }
+                }
             }
         }
     }
 }
+
+
+
+
+
+
 
 
 
