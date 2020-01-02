@@ -6,6 +6,7 @@ import "qml/index" as CIndex
 import "qml/index/user" as CUser
 import "qml/games/backgammon" as BackgammonUI
 import "qml/games/court_piece" as CourtPiece
+
 ApplicationWindow {
     id: mainWindow
     visible: true
@@ -25,27 +26,26 @@ ApplicationWindow {
         source: "qrc:///IcoMoon"
     }
 
-    CRoot.BasicAuth {
+    /*CRoot.BasicAuth {
         id: basicAuth
         onLoginOk: {
             mainStackView.pop()
             mainStackView.push(index)
         }
-    }
+    }*/
     CIndex.Index {
         id: index
         onShowProfile: mainStackView.push(userProfile)
     }
-    CUser.Profile{
-        id:userProfile
+    /*CUser.Profile {
+        id: userProfile
+        visible: false
         onBack: mainStackView.pop()
-    }
+    }*/
 
     StackView {
         id: mainStackView
-
         anchors.fill: parent
-        initialItem: basicAuth
-        Component.onCompleted: push(index)
+        initialItem: index
     }
 }

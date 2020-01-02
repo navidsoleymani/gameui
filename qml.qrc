@@ -71,6 +71,7 @@
         <file alias="graphics/text-input-bg">assets/images/UI-edited/text-input-bg.png</file>
         <file alias="graphics/wallet">assets/images/UI-edited/wallet.png</file>
         <file alias="graphics/auth-bg">assets/images/UI-edited/auth-bg.png</file>
+        <file alias="graphics/index-bg">assets/images/UI-edited/index-bg.png</file>
         <file alias="graphics/bar-green-transparent">assets/images/UI-edited/bar-green-transparent.png</file>
         <file alias="graphics/black-bar-one-side">assets/images/UI-edited/black-bar-one-side.png</file>
         <file alias="graphics/blue-bar">assets/images/UI-edited/blue-bar.png</file>
