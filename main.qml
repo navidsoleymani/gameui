@@ -36,7 +36,13 @@ ApplicationWindow {
     CIndex.Index {
         id: index
         onShowProfile: mainStackView.push(userProfile)
+        onPlayCoutPiece: mainStackView.push(courtPiece)
     }
+    CourtPiece.Index{
+        id: courtPiece
+        onBack: mainStackView.pop()
+    }
+
     /*CUser.Profile {
         id: userProfile
         visible: false

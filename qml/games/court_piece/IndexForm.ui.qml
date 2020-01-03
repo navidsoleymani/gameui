@@ -4,6 +4,7 @@ import QtQuick.Controls 2.3
 Item {
     width: 400
     height: 400
+    property alias backBtn: backBtn
 
     Page {
         id: page
@@ -12,6 +13,15 @@ Item {
             anchors.fill: parent
             fillMode: Image.Stretch
             source: "qrc:/graphics/auth-bg"
+        }
+        Image {
+            source: "qrc:/graphics/left-arrow"
+            x: 15
+            y: 15
+            MouseArea {
+                id: backBtn
+                anchors.fill: parent
+            }
         }
 
         Column {
@@ -70,6 +80,7 @@ Item {
         }
     }
 }
+
 
 
 

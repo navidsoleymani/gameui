@@ -98,32 +98,36 @@ Item {
                     width: parent.width * 0.9
                     height: parent.height * 0.5
                     anchors.horizontalCenter: parent.horizontalCenter
-                    spacing: 10
-                    Image {
-                        width: parent.width * 0.15
-                        height: parent.height * 0.9
-                        source: "qrc:/graphics/text-input-bg-black"
-                        Text {
-                            anchors.centerIn: parent
-                            font.pixelSize: parent.height * 0.30
-                            color: "yellow"
-                            text: qsTr("تنظیمات")
+                    Row {
+                        width: parent.width / 3
+                        height: parent.height
+                        spacing: width * 00.06
+                        Image {
+                            width: parent.width * 0.47
+                            height: parent.height * 0.9
+                            source: "qrc:/graphics/text-input-bg-black"
+                            Text {
+                                anchors.centerIn: parent
+                                font.pixelSize: parent.height * 0.30
+                                color: "yellow"
+                                text: qsTr("تنظیمات")
+                            }
                         }
-                    }
-                    Image {
-                        width: parent.width * 0.15
-                        height: parent.height * 0.9
-                        source: "qrc:/graphics/text-input-bg-black"
-                        Text {
-                            anchors.centerIn: parent
-                            font.pixelSize: parent.height * 0.30
-                            color: "yellow"
-                            text: qsTr("تراکنش ها")
+                        Image {
+                            width: parent.width * 0.47
+                            height: parent.height * 0.9
+                            source: "qrc:/graphics/text-input-bg-black"
+                            Text {
+                                anchors.centerIn: parent
+                                font.pixelSize: parent.height * 0.30
+                                color: "yellow"
+                                text: qsTr("تراکنش ها")
+                            }
                         }
                     }
 
                     Rectangle {
-                        width: parent.width * 0.30
+                        width: parent.width / 3
                         height: parent.height * 0.9
                         color: "transparent"
                         Row {
@@ -144,27 +148,32 @@ Item {
                             }
                         }
                     }
-                    Image {
-                        width: parent.width * 0.15
-                        height: parent.height * 0.9
-                        source: "qrc:/graphics/text-input-bg-black"
-                        Text {
-                            anchors.centerIn: parent
-                            font.pixelSize: parent.height * 0.30
-                            color: "yellow"
-                            text: qsTr("در حال بازی")
+                    Row {
+                        width: parent.width / 3
+                        height: parent.height
+                        spacing: width * 00.06
+                        Image {
+                            width: parent.width * 0.47
+                            height: parent.height * 0.9
+                            source: "qrc:/graphics/text-input-bg-black"
+                            Text {
+                                anchors.centerIn: parent
+                                font.pixelSize: parent.height * 0.30
+                                color: "yellow"
+                                text: qsTr("در حال بازی")
+                            }
                         }
-                    }
 
-                    Image {
-                        width: parent.width * 0.15
-                        height: parent.height * 0.9
-                        source: "qrc:/graphics/text-input-bg-black"
-                        Text {
-                            anchors.centerIn: parent
-                            font.pixelSize: parent.height * 0.30
-                            color: "yellow"
-                            text: qsTr("پشتیبانی")
+                        Image {
+                            width: parent.width * 0.47
+                            height: parent.height * 0.9
+                            source: "qrc:/graphics/text-input-bg-black"
+                            Text {
+                                anchors.centerIn: parent
+                                font.pixelSize: parent.height * 0.30
+                                color: "yellow"
+                                text: qsTr("پشتیبانی")
+                            }
                         }
                     }
                 }
@@ -172,21 +181,6 @@ Item {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*##^## Designer {
     D{i:0;height:350;width:800}

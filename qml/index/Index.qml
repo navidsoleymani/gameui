@@ -5,11 +5,10 @@ import "helpers" as Helpers
 
 IndexForm {
     signal showProfile
+    signal playCoutPiece
+    signal playBackgammon
     width: parent.width
     height: parent.height
-    pokerMA.onPressed: console.log("pressed")
-    pokerMA.onReleased: console.log("released")
-
-    backgammmonMA.onPressed: console.log("pressed")
-    backgammmonMA.onReleased: console.log("released")
+    pokerMA.onClicked: playCoutPiece()
+    backgammmonMA.onClicked: playBackgammon()
 }
