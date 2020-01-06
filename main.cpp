@@ -4,6 +4,7 @@
 #include "src/auth/login.hpp"
 #include "src/auth/register.hpp"
 #include "src/auth/reset.hpp"
+#include "src/ui/uimanager.hpp"
 #ifdef GU_ANDROID_BUILD
 #include "src/androidhelpers.hpp"
 #endif
@@ -25,11 +26,13 @@ int main(int argc, char* argv[])
     Login loginObj;
     Register registerObj;
     Reset resetObj;
+    UIManager uiMgr;
     QQmlApplicationEngine engine;
     auto root = engine.rootContext();
     root->setContextProperty("LoginManager", &loginObj);
     root->setContextProperty("RegisterManager", &registerObj);
     root->setContextProperty("ResetManager", &resetObj);
+    root->setContextProperty("UIManager", &uiMgr);
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
     if (engine.rootObjects().isEmpty())
         return -1;

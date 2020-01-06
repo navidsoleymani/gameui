@@ -16,7 +16,8 @@ SOURCES += \
         main.cpp \
     src/auth/login.cpp \
     src/auth/register.cpp \
-    src/auth/reset.cpp
+    src/auth/reset.cpp \
+    src/ui/uimanager.cpp
 
 RESOURCES += qml.qrc
 
@@ -57,5 +58,6 @@ HEADERS += \
     src/auth/login.hpp \
     src/auth/register.hpp \
     src/auth/reset.hpp \
-    src/constants.hpp
+    src/constants.hpp \
+    src/ui/uimanager.hpp
 

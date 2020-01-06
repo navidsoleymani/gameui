@@ -26,6 +26,7 @@ ApplicationWindow {
         source: "qrc:///IcoMoon"
     }
 
+
     /*CRoot.BasicAuth {
         id: basicAuth
         onLoginOk: {
@@ -33,25 +34,33 @@ ApplicationWindow {
             mainStackView.push(index)
         }
     }*/
-    CIndex.Index {
+
+    /*CIndex.Index {
         id: index
         onShowProfile: mainStackView.push(userProfile)
-        onPlayCoutPiece: mainStackView.push(courtPiece)
+        onPlayCoutPiece: {
+            mainStackView.push(courtPiece)
+        }
     }
-    CourtPiece.Index{
+    CourtPiece.Index {
         id: courtPiece
         onBack: mainStackView.pop()
+        onOpenGamePage: mainStackView.push(courtPieceGamePage)
     }
+    CourtPiece.GamePage {
+        id: courtPieceGamePage
+    }*/
+
 
     /*CUser.Profile {
         id: userProfile
         visible: false
         onBack: mainStackView.pop()
     }*/
-
     StackView {
         id: mainStackView
         anchors.fill: parent
-        initialItem: index
+        initialItem: CourtPiece.GamePage {
+        }
     }
 }
