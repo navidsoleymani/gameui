@@ -26,41 +26,30 @@ ApplicationWindow {
         source: "qrc:///IcoMoon"
     }
 
-
-    /*CRoot.BasicAuth {
+    CRoot.BasicAuth {
         id: basicAuth
         onLoginOk: {
             mainStackView.pop()
             mainStackView.push(index)
+            visible = false
         }
-    }*/
+    }
 
-    /*CIndex.Index {
+    CIndex.Index {
         id: index
-        onShowProfile: mainStackView.push(userProfile)
-        onPlayCoutPiece: {
-            mainStackView.push(courtPiece)
+        //onShowProfile: mainStackView.push(userProfile)
+        onPlayCourtPiece: {
+            mainStackView.push("qml/games/court_piece/Index.qml")
         }
     }
-    CourtPiece.Index {
-        id: courtPiece
-        onBack: mainStackView.pop()
-        onOpenGamePage: mainStackView.push(courtPieceGamePage)
+    Connections{
+        target: UIManager
+        onGoBack:mainStackView.pop()
     }
-    CourtPiece.GamePage {
-        id: courtPieceGamePage
-    }*/
 
-
-    /*CUser.Profile {
-        id: userProfile
-        visible: false
-        onBack: mainStackView.pop()
-    }*/
     StackView {
         id: mainStackView
         anchors.fill: parent
-        initialItem: CourtPiece.GamePage {
-        }
+        initialItem: basicAuth
     }
 }

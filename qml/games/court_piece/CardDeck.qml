@@ -2,13 +2,15 @@ import QtQuick 2.4
 import QtQuick.Window 2.12
 
 CardDeckForm {
-
+    signal cardCliked(string name, string imagePath)
 
     /*
      * 1 = left-right
      * 2 = top-left
      */
     property int placement: 1
+    property double centerX: 0
+    property double centery: 0
     cardRepeater.delegate: Image {
         source: cardImg
         fillMode: Image.PreserveAspectFit
@@ -24,31 +26,10 @@ CardDeckForm {
         }
         MouseArea {
             anchors.fill: parent
-        }
-    }
-    cardRepeater.model: cardsModel
-    ListModel {
-        id: cardsModel
-        ListElement {
-            cardImg: "qrc:/cards/2D"
-        }
-        ListElement {
-            cardImg: "qrc:/cards/3D"
-        }
-        ListElement {
-            cardImg: "qrc:/cards/4H"
-        }
-        ListElement {
-            cardImg: "qrc:/cards/5S"
-        }
-        ListElement {
-            cardImg: "qrc:/cards/6D"
+            onClicked: if (placement == 1) {
+                           parent.visible = false
+                           cardCliked(card, cardImg)
+                       }
         }
     }
 }
-
-/*##^## Designer {
-    D{i:0;autoSize:true;height:480;width:640}
-}
- ##^##*/
-

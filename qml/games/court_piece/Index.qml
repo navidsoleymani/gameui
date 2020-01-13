@@ -6,9 +6,11 @@ IndexForm {
     property alias timer1: timer1
     width: parent.width
     height: parent.height
-    backBtn.onClicked: back()
+    backBtn.onClicked: UIManager.backPressed()
+
     Timer {
         id: timer1
+        running: true
         interval: 4000
         repeat: false
         onTriggered: openGamePage()

@@ -5,10 +5,10 @@ import "helpers" as Helpers
 
 IndexForm {
     signal showProfile
-    signal playCoutPiece
+    signal playCourtPiece
     signal playBackgammon
     width: parent.width
     height: parent.height
-    pokerMA.onClicked: playCoutPiece()
+    pokerMA.onClicked: playCourtPiece()
     backgammmonMA.onClicked: playBackgammon()
 }

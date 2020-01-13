@@ -96,82 +96,63 @@
         <file alias="graphics/player-details-border">assets/images/UI-edited/player-details-border.png</file>
         <file alias="graphics/winner-title">assets/images/UI-edited/winner-title.png</file>
         <file alias="cards/2C">assets/images/cards/2C.png</file>
-  <file alias="cards/2D">assets/images/cards/2D.png</file>
-  <file alias="cards/2H">assets/images/cards/2H.png</file>
-  <file alias="cards/2S">assets/images/cards/2S.png</file>
-  
-
-  <file alias="cards/3C">assets/images/cards/3C.png</file>
-  <file alias="cards/3D">assets/images/cards/3D.png</file>
-  <file alias="cards/3H">assets/images/cards/3H.png</file>
-  <file alias="cards/3S">assets/images/cards/3S.png</file>
-  
-
-  <file alias="cards/4C">assets/images/cards/4C.png</file>
-  <file alias="cards/4D">assets/images/cards/4D.png</file>
-  <file alias="cards/4H">assets/images/cards/4H.png</file>
-  <file alias="cards/4S">assets/images/cards/4S.png</file>
-  
-
-  <file alias="cards/5C">assets/images/cards/5C.png</file>
-  <file alias="cards/5D">assets/images/cards/5D.png</file>
-  <file alias="cards/5H">assets/images/cards/5H.png</file>
-  <file alias="cards/5S">assets/images/cards/5S.png</file>
-  
-
-  <file alias="cards/6C">assets/images/cards/6C.png</file>
-  <file alias="cards/6D">assets/images/cards/6D.png</file>
-  <file alias="cards/6H">assets/images/cards/6H.png</file>
-  <file alias="cards/6S">assets/images/cards/6S.png</file>
-  
-
-  <file alias="cards/7C">assets/images/cards/7C.png</file>
-  <file alias="cards/7D">assets/images/cards/7D.png</file>
-  <file alias="cards/7H">assets/images/cards/7H.png</file>
-  <file alias="cards/7S">assets/images/cards/7S.png</file>
-  
-
-  <file alias="cards/8C">assets/images/cards/8C.png</file>
-  <file alias="cards/8D">assets/images/cards/8D.png</file>
-  <file alias="cards/8H">assets/images/cards/8H.png</file>
-  <file alias="cards/8S">assets/images/cards/8S.png</file>
-  
-
-  <file alias="cards/9C">assets/images/cards/9C.png</file>
-  <file alias="cards/9D">assets/images/cards/9D.png</file>
-  <file alias="cards/9H">assets/images/cards/9H.png</file>
-  <file alias="cards/9S">assets/images/cards/9S.png</file>
-  
-
-  <file alias="cards/10C">assets/images/cards/10C.png</file>
-  <file alias="cards/10D">assets/images/cards/10D.png</file>
-  <file alias="cards/10H">assets/images/cards/10H.png</file>
-  <file alias="cards/10S">assets/images/cards/10S.png</file>
-  
-
-  <file alias="cards/AC">assets/images/cards/AC.png</file>
-  <file alias="cards/AD">assets/images/cards/AD.png</file>
-  <file alias="cards/AH">assets/images/cards/AH.png</file>
-  <file alias="cards/AS">assets/images/cards/AS.png</file>
-  
-
-  <file alias="cards/JC">assets/images/cards/JC.png</file>
-  <file alias="cards/JD">assets/images/cards/JD.png</file>
-  <file alias="cards/JH">assets/images/cards/JH.png</file>
-  <file alias="cards/JS">assets/images/cards/JS.png</file>
-  
-
-  <file alias="cards/QC">assets/images/cards/QC.png</file>
-  <file alias="cards/QD">assets/images/cards/QD.png</file>
-  <file alias="cards/QH">assets/images/cards/QH.png</file>
-  <file alias="cards/QS">assets/images/cards/QS.png</file>
-  
-
-  <file alias="cards/KC">assets/images/cards/KC.png</file>
-  <file alias="cards/KD">assets/images/cards/KD.png</file>
-  <file alias="cards/KH">assets/images/cards/KH.png</file>
-  <file alias="cards/KS">assets/images/cards/KS.png</file>
-
+        <file alias="cards/2D">assets/images/cards/2D.png</file>
+        <file alias="cards/2H">assets/images/cards/2H.png</file>
+        <file alias="cards/2S">assets/images/cards/2S.png</file>
+        <file alias="cards/3C">assets/images/cards/3C.png</file>
+        <file alias="cards/3D">assets/images/cards/3D.png</file>
+        <file alias="cards/3H">assets/images/cards/3H.png</file>
+        <file alias="cards/3S">assets/images/cards/3S.png</file>
+        <file alias="cards/4C">assets/images/cards/4C.png</file>
+        <file alias="cards/4D">assets/images/cards/4D.png</file>
+        <file alias="cards/4H">assets/images/cards/4H.png</file>
+        <file alias="cards/4S">assets/images/cards/4S.png</file>
+        <file alias="cards/5C">assets/images/cards/5C.png</file>
+        <file alias="cards/5D">assets/images/cards/5D.png</file>
+        <file alias="cards/5H">assets/images/cards/5H.png</file>
+        <file alias="cards/5S">assets/images/cards/5S.png</file>
+        <file alias="cards/6C">assets/images/cards/6C.png</file>
+        <file alias="cards/6D">assets/images/cards/6D.png</file>
+        <file alias="cards/6H">assets/images/cards/6H.png</file>
+        <file alias="cards/6S">assets/images/cards/6S.png</file>
+        <file alias="cards/7C">assets/images/cards/7C.png</file>
+        <file alias="cards/7D">assets/images/cards/7D.png</file>
+        <file alias="cards/7H">assets/images/cards/7H.png</file>
+        <file alias="cards/7S">assets/images/cards/7S.png</file>
+        <file alias="cards/8C">assets/images/cards/8C.png</file>
+        <file alias="cards/8D">assets/images/cards/8D.png</file>
+        <file alias="cards/8H">assets/images/cards/8H.png</file>
+        <file alias="cards/8S">assets/images/cards/8S.png</file>
+        <file alias="cards/9C">assets/images/cards/9C.png</file>
+        <file alias="cards/9D">assets/images/cards/9D.png</file>
+        <file alias="cards/9H">assets/images/cards/9H.png</file>
+        <file alias="cards/9S">assets/images/cards/9S.png</file>
+        <file alias="cards/10C">assets/images/cards/10C.png</file>
+        <file alias="cards/10D">assets/images/cards/10D.png</file>
+        <file alias="cards/10H">assets/images/cards/10H.png</file>
+        <file alias="cards/10S">assets/images/cards/10S.png</file>
+        <file alias="cards/AC">assets/images/cards/AC.png</file>
+        <file alias="cards/AD">assets/images/cards/AD.png</file>
+        <file alias="cards/AH">assets/images/cards/AH.png</file>
+        <file alias="cards/AS">assets/images/cards/AS.png</file>
+        <file alias="cards/JC">assets/images/cards/JC.png</file>
+        <file alias="cards/JD">assets/images/cards/JD.png</file>
+        <file alias="cards/JH">assets/images/cards/JH.png</file>
+        <file alias="cards/JS">assets/images/cards/JS.png</file>
+        <file alias="cards/QC">assets/images/cards/QC.png</file>
+        <file alias="cards/QD">assets/images/cards/QD.png</file>
+        <file alias="cards/QH">assets/images/cards/QH.png</file>
+        <file alias="cards/QS">assets/images/cards/QS.png</file>
+        <file alias="cards/KC">assets/images/cards/KC.png</file>
+        <file alias="cards/KD">assets/images/cards/KD.png</file>
+        <file alias="cards/KH">assets/images/cards/KH.png</file>
+        <file alias="cards/KS">assets/images/cards/KS.png</file>
+        <file alias="cards/blue_back">assets/images/cards/blue_back.png</file>
+        <file alias="cards/gray_back">assets/images/cards/gray_back.png</file>
+        <file alias="cards/green_back">assets/images/cards/green_back.png</file>
+        <file alias="cards/purple_back">assets/images/cards/purple_back.png</file>
+        <file alias="cards/red_back">assets/images/cards/red_back.png</file>
+        <file alias="cards/yellow_back">assets/images/cards/yellow_back.png</file>
         <file>qml/games/backgammon/Index.qml</file>
         <file>qml/games/backgammon/IndexForm.ui.qml</file>
         <file>qml/games/court_piece/Index.qml</file>
