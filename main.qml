@@ -39,12 +39,15 @@ ApplicationWindow {
         id: index
         //onShowProfile: mainStackView.push(userProfile)
         onPlayCourtPiece: {
-            mainStackView.push("qml/games/court_piece/Index.qml")
+            mainStackView.push("qml/games/court_piece/Index.qml", {
+                                   "height": mainStackView.height,
+                                   "width": mainStackView.width
+                               })
         }
     }
-    Connections{
+    Connections {
         target: UIManager
-        onGoBack:mainStackView.pop()
+        onGoBack: mainStackView.pop()
     }
 
     StackView {

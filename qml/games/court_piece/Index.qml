@@ -4,8 +4,6 @@ IndexForm {
     signal back
     signal openGamePage
     property alias timer1: timer1
-    width: parent.width
-    height: parent.height
     backBtn.onClicked: UIManager.backPressed()
 
     Timer {
@@ -13,6 +11,20 @@ IndexForm {
         running: true
         interval: 4000
         repeat: false
-        onTriggered: openGamePage()
+        onTriggered: {
+            openGamePage()
+        }
+    }
+    onOpenGamePage: courtPiecGameStackView.push(
+                        "GamePage.qml")
+    Connections {
+        target: UIManager
+        onGoBack: courtPiecGameStackView.pop()
     }
 }
+
+/*##^##
+Designer {
+    D{i:0;autoSize:true;height:480;width:640}
+}
+##^##*/

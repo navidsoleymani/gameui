@@ -55,4 +55,5 @@ GamePageForm {
     ListModel{
         id:gameDeckModel
     }
+    backBtn.onClicked: UIManager.backPressed()
 }

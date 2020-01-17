@@ -4,6 +4,9 @@ import QtQuick.Controls 2.12
 Item {
     width: 400
     height: 400
+    property alias dropBtn: dropBtn
+    property alias takeBtn: takeBtn
+    property alias backBtn: backBtn
     property alias gameDeck: gameDeck
     property alias oponentDeck: oponentDeck
     property alias userDeck: userDeck
@@ -34,6 +37,16 @@ Item {
             anchors.left: parent.left
             anchors.leftMargin: 15
         }
+        Image {
+            clip: true
+            width: 75
+            height: 75
+            anchors.top: oponentDeck.bottom
+            anchors.topMargin: 15
+            anchors.left: parent.left
+            anchors.leftMargin: 15
+            source: "qrc:/drawer-img/7"
+        }
 
         PathView {
             id: gameDeck
@@ -58,10 +71,38 @@ Item {
                 PathArc {
                     x: 0
                     y: 100
-                    radiusX: gameDeck.width * 0.50
-                    radiusY: gameDeck.width * 0.50
+                    radiusX: gameDeck.width * 0.25
+                    radiusY: gameDeck.width * 0.25
                     useLargeArc: true
                 }
+            }
+        }
+        Button {
+            id: dropBtn
+            text: "انداختن"
+            anchors.right: parent.right
+            anchors.rightMargin: 15
+            anchors.bottom: takeBtn.top
+            anchors.bottomMargin: 15
+        }
+        Button {
+            id: takeBtn
+            text: "برداشتن"
+            anchors.right: parent.right
+            anchors.rightMargin: 15
+            anchors.bottom: userDeck.top
+            anchors.bottomMargin: 15
+        }
+        Image {
+            id: image
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 15
+            anchors.left: parent.left
+            anchors.leftMargin: 15
+            source: "qrc:/graphics/left-arrow"
+            MouseArea {
+                id: backBtn
+                anchors.fill: parent
             }
         }
     }
@@ -69,7 +110,7 @@ Item {
 
 /*##^##
 Designer {
-    D{i:0;height:400;width:800}D{i:5;anchors_height:130;anchors_width:250}
+    D{i:0;height:400;width:800}
 }
 ##^##*/
 
