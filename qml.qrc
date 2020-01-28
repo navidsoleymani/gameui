@@ -20,8 +20,6 @@
         <file alias="poker-bg">assets/images/poker-img.jpg</file>
         <file alias="backgammon-bg">assets/images/backgammon-img.jpg</file>
         <file alias="IcoMoon">assets/Fonts/icomoon-v1.0/fonts/icomoon.ttf</file>
-        <file>qml/index/helpers/IndexDrawer.qml</file>
-        <file>qml/index/helpers/IndexDrawerForm.ui.qml</file>
         <file alias="drawer-bg/1">assets/images/bg-1.jpg</file>
         <file alias="drawer-bg/2">assets/images/bg-2.jpg</file>
         <file alias="drawer-bg/3">assets/images/bg-3.jpg</file>
@@ -165,5 +163,14 @@
         <file>qml/games/court_piece/GamePageForm.ui.qml</file>
         <file>qml/games/court_piece/CardDeck.qml</file>
         <file>qml/games/court_piece/CardDeckForm.ui.qml</file>
+        <file>qml/games/backgammon/GameTable.qml</file>
+        <file>qml/games/backgammon/GameTableForm.ui.qml</file>
+        <file alias="graphics/backgammon-bar-1-dark">assets/images/UI-edited/backgammon-bar-1-dark.png</file>
+        <file alias="graphics/backgammon-bar-1-light">assets/images/UI-edited/backgammon-bar-1-light.png</file>
+        <file alias="graphics/bckgammon-bg-2">assets/images/UI-edited/bckgammon-bg-2.png</file>
+        <file alias="graphics/backgammon-info-bg">assets/images/UI-edited/backgammon-info-bg.png</file>
+        <file>qml/games/backgammon/GameInfo.qml</file>
+        <file>qml/games/backgammon/GameInfoForm.ui.qml</file>
+        <file>qml/games/backgammon/CircularProgreesBar.qml</file>
     </qresource>
 </RCC>

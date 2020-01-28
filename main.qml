@@ -44,7 +44,21 @@ ApplicationWindow {
                                    "width": mainStackView.width
                                })
         }
+        onPlayBackgammon: {
+            mainStackView.push("qml/games/backgammon/Index.qml", {
+                                   "height": mainStackView.height,
+                                   "width": mainStackView.width
+                               })
+        }
+        height: mainStackView.height
+        width: mainStackView.width
     }
+    BackgammonUI.Index {
+        id: backgammonUI
+        height: mainStackView.height
+        width: mainStackView.width
+    }
+
     Connections {
         target: UIManager
         onGoBack: mainStackView.pop()
